@@ -19,6 +19,10 @@
     },
     "menu": {
       "dashboard": "Dashboard",
+      "inventory": "Container Inventory",
+      "search": "Container Search",
+      "transaction": "My Transaction",
+      "booking": "Container Booking",
       "editors": "Editors",
       "ck_editor": "CKEditor",
       "components": "Components",

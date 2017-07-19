@@ -3,7 +3,7 @@
     <h1 translate>{{'login.title'}}</h1>
     <a routerLink="/register" class="auth-link" translate>{{'login.signup_link'}}</a>
 
-    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="form-horizontal">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-horizontal">
       <div class="form-group row" [ngClass]="{'has-error': (!email.valid && email.touched), 'has-success': (email.valid && email.touched)}">
         <label for="inputEmail3" class="col-sm-2 control-label" translate>{{'login.email'}}</label>
 
@@ -20,7 +20,8 @@
       </div>
       <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">
-          <button [disabled]="!form.valid" type="submit" class="btn btn-default btn-auth" translate>{{'login.sign_in'}}</button>
+         <!--  <button type="submit" class="btn btn-default btn-auth" translate href="#/pages/dashboard">{{'login.sign_in'}}</button> // routerLink="/register" -->
+         <button type="submit"  routerLink="/register" class="btn btn-default btn-auth" translate>{{'login.sign_in'}}</button>
           <a routerLink="/login" class="forgot-pass" translate>{{'login.forgot_password'}}</a>
         </div>
       </div>

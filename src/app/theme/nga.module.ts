@@ -4,6 +4,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgUploaderModule } from 'ngx-uploader';
 import { AppTranslationModule } from '../app.translation.module';
+import { InventoryModule } from '../../app/pages/inventory/inventory.module';
+
 
 import {
   BaThemeConfig
@@ -29,7 +31,7 @@ import {
   BaPictureUploader,
   BaSidebar,
   BaFileUploader
-} from './components';
+ } from './components';
 
 import { BaCardBlur } from './components/baCard/baCardBlur.directive';
 
@@ -72,7 +74,7 @@ const NGA_COMPONENTS = [
   BaPageTop,
   BaPictureUploader,
   BaSidebar,
-  BaFileUploader
+  BaFileUploader,  
 ];
 
 const NGA_DIRECTIVES = [
